@@ -1,0 +1,105 @@
+{
+	"id": "2a109f44-6ccf-44a5-8c8c-137573d90a81",
+	"name": "Collection2",
+	"timestamp": "2024-07-04T11:17:44.644Z",
+	"collection_id": "36734993-e73e55db-5f21-4f96-8fae-38334da9d56d",
+	"folder_id": 0,
+	"environment_id": "36734993-789474d1-5bd4-483a-9b95-e5f6917f56f5",
+	"totalPass": 6,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-07-04T11:17:42.740Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "7f3f6f57-0143-4b77-bada-052718a7f168",
+			"name": "Homepage",
+			"url": "http://localhost:8888/",
+			"time": 6,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				51,
+				8,
+				6,
+				7,
+				5,
+				6
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "eab598af-65ce-4bbe-9eab-b5af5c173cbc",
+			"name": "UsersList",
+			"url": "http://localhost:8888/user",
+			"time": 29,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 6,
+					"fail": 0
+				}
+			},
+			"times": [
+				23,
+				18,
+				53,
+				17,
+				19,
+				29
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				},
+				{
+					"Status code is 201": true
+				},
+				{
+					"Status code is 201": true
+				},
+				{
+					"Status code is 201": true
+				},
+				{
+					"Status code is 201": true
+				},
+				{
+					"Status code is 201": true
+				}
+			]
+		}
+	],
+	"count": 6,
+	"totalTime": 242,
+	"collection": {
+		"requests": [
+			{
+				"id": "7f3f6f57-0143-4b77-bada-052718a7f168",
+				"method": "GET"
+			},
+			{
+				"id": "eab598af-65ce-4bbe-9eab-b5af5c173cbc",
+				"method": "POST"
+			}
+		]
+	}
+}
