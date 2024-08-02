@@ -1,0 +1,28 @@
+package com.testapp;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class LaunchBrowser {
+
+	public static void main(String[] args) {
+		
+
+		//WebDriver wd=new ChromeDriver();
+		
+		//wd.get("http://www.mahendra.info/");
+		
+//		WebDriver driverfox=new FirefoxDriver();
+//		driverfox.get("http://www.mahendra.info/");
+		
+//		WebDriver driveredge=new EdgeDriver();
+//	driveredge.get("https://www.google.com/intl/en-US/gmail/about/");
+		
+		WebDriver google=new ChromeDriver();
+		google.get("https://www.google.com/");
+		
+	}
+
+}

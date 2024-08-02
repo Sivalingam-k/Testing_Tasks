@@ -1,0 +1,15 @@
+package com.testapp;
+
+import org.openqa.selenium.WebDriver;
+
+public class LaunchBrowser {
+
+	public static void main(String[] args) {
+		
+
+		WebDriver wd=new ChromeDriver();
+		
+		wd.get("http://www.mahendra.info/");
+	}
+
+}

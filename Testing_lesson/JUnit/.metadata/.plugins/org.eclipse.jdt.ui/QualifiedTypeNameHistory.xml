@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
+    <fullyQualifiedTypeName name="java.lang.Boolean"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.condition.EnabledOnOs"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.condition.OS"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.BeforeAll"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.AfterAll"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.BeforeEach"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.AfterEach"/>
+    <fullyQualifiedTypeName name="io.cal.LifeCycleAnnotation"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.TestInstance"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.TestInstance.Lifecycle"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.Nested"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.Disabled"/>
+</qualifiedTypeNameHistroy>

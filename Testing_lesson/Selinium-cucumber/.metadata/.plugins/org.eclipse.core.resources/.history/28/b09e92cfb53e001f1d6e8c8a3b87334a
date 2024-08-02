@@ -1,0 +1,24 @@
+package stepDefinition;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import io.cucumber.java.en.Given;
+
+		
+
+public class pageFactoryLoginSteps {
+
+	static WebDriver driver;
+	LoginPageFactory login;
+	HomePageFactory home;
+	
+	
+	@Given("User is on login page")
+	public void user_is_on_login_page() {
+	    // Write code here that turns the phrase above into concrete actions
+	
+	driver = new FirefoxDriver();
+	driver.get("");
+	}
+}

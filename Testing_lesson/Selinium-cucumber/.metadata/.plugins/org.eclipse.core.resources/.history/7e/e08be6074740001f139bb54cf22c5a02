@@ -1,0 +1,26 @@
+#Sureshmanikandan
+#10/7/2024
+
+Feature: Login page automation of saucedemo application
+Scenario: Check login is successful with valid credentials
+
+    Given User is on Dashboard page
+    When User enters valid "<username>" and "<password>"
+    And clicks on login button
+    Then user is navigated to the OIl page
+    Then user is navigated to the Vegetables page
+    Then user is navigated to the Pulses page
+    Then user is navigated to the Fruits page
+    Then user is navigated to the Diary  page
+    And Close the browser
+
+
+    Examples: 
+      | username  | password |
+     |manoj@gmail.com|Manoj@123|
+      
+      
+
+
+
+

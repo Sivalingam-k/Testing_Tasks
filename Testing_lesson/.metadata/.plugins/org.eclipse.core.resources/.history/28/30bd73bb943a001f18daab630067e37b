@@ -1,0 +1,17 @@
+package com.APITesting;
+
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+
+public class FirstTest {
+
+	@Test	//Execute the Function
+	public void GETapiTest() {
+		
+		RestAssured.get("https://reqres.in/api/users?page=2");
+
+		
+	
+	}
+}

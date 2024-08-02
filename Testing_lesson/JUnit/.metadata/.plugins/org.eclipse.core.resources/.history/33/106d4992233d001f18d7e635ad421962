@@ -1,0 +1,23 @@
+package rentalCar;
+
+public class RegistrationPage {
+
+	 public String Yourname(String firstname,String LastName) {
+		
+		 return (firstname+LastName);
+	 }
+	 
+	 public String Email(String email) {
+		 return (email);
+	 }
+	 
+	 public long PhoneNumber(long actual) {
+		 return actual;
+	 }
+	 public boolean UserName(String username) {
+		 return ((username.length()>0));
+	 }
+	 public boolean Password(String password) {
+		 return ((password.length()>=6) && (password.contains("@")));
+	 }
+}

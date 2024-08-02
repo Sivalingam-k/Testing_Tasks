@@ -1,0 +1,56 @@
+package com.testapp;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class TestRegistrationPage {
+
+	@Test	
+	public void testRegistrationPage() {
+		WebDriver react = new FirefoxDriver();
+
+		
+
+		// opening the home paage
+
+		 react.get("http://localhost:3000");
+
+		
+
+		// opening the login button
+
+		 react.findElement(By.xpath("//button[normalize-space()='Rent a Car']")).click();
+
+		 
+
+		 //opening the signup
+
+		 react.findElement(By.xpath("//button[normalize-space()=\"Don't have an account? Sign Up\"]")).click();
+
+		 
+
+		 //opening the firest_name
+
+		 react.findElement(By.id("firstName")).sendKeys("Basil");
+
+		 react.findElement(By.id("lastName")).sendKeys("Ahamed");
+
+		 react.findElement(By.id("username")).sendKeys("basilahamed007basil");
+
+		 react.findElement(By.id("useremail")).sendKeys("basilahamed007@protonmail.com");
+
+		 react.findElement(By.id("phoneNumber")).sendKeys("7397061751");
+
+		 react.findElement(By.id("address")).sendKeys("USA");
+
+		 react.findElement(By.id("userpassword")).sendKeys("Usa@12345678");
+
+		 react.findElement(By.id("confirmPassword")).sendKeys("Usa@12345678");
+
+		 
+
+		react.findElement(By.xpath("//button[normalize-space()='Sign Up'] = button")).click();	}
+
+	
+}

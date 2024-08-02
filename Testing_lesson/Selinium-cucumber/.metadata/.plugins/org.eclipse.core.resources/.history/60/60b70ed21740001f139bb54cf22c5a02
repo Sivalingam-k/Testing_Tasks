@@ -1,0 +1,31 @@
+package stepDefinition;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+
+public class LoginSteps {
+	
+	
+ 
+	@Given("user is on login page")
+	public void user_is_on_login_page() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@When("User enters valid {string} and {string}")
+	public void user_enters_valid_and(String string, String string2) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("user is navigated to the Dashboard page")
+	public void user_is_navigated_to_the_dashboard_page() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+}

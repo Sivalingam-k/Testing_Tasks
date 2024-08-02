@@ -1,0 +1,81 @@
+package io.cal;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.util.Scanner;
+
+import org.junit.jupiter.api.Test;
+
+class CreateAnAccountPageTest {
+
+	Scanner sc=new Scanner(System.in);
+	//@Test
+	void testYourName() {
+		CreateAnAccountPage cap=new CreateAnAccountPage();
+		System.out.println("Enter Your First Name:");
+		String Firstname=sc.next();
+		
+    if(Firstname=="") {
+			System.out.println("Feild is Required!!");
+		}
+    else {
+	 Firstname=sc.next();
+   }
+		System.out.println("Enter Your Last Name");
+		String Lastname=sc.next();
+		
+		String Result=Firstname+Lastname;
+		String ActualResult=Firstname+Lastname;
+		System.out.println("Full Name is :"+Result);
+		assertEquals(Result,ActualResult);
+	}
+//	//@Test
+//	void testFirstName1() {
+//		CreateAnAccountPage cap=new CreateAnAccountPage();
+//     System.out.println("Enter Your First Name:");
+//		
+//		String Firstname=sc.next();
+//		System.out.println("Enter Your Last Name");
+//		String Lastname=sc.next();
+//		
+//		String Result=Firstname+Lastname;
+//		String ActualResult=Firstname+Lastname;
+//		System.out.println("Full Name is :"+Result);
+//		assertEquals(Result,ActualResult);
+//		
+//	}
+//	//@Test
+//	void testFirstName2() {
+//		CreateAnAccountPage cap=new CreateAnAccountPage();
+//		
+//		String actual=cap.yourName("Shiva", "1243");
+//		String expected="ShivaLingam";
+//		
+//		assertEquals(expected,actual);
+//	}
+
+	@Test
+	void testMobAndEmail() {
+		CreateAnAccountPage cap=new CreateAnAccountPage();
+		assertAll(
+				"",
+				()->assertEquals(cap.MobileNumberAndEmailId("66564536543", "abc@gmail.com"),cap.MobileNumberAndEmailId("66564536543", "abc@gmail.com"))
+			//	()->assertEquals(cap.MobileNumberAndEmailId("", "abc@gmail.com"),cap.MobileNumberAndEmailId("", "abc@gmail.com")),
+			//	()->assertEquals(cap.MobileNumberAndEmailId("66564536543", ""),cap.MobileNumberAndEmailId("", "")),
+			//	()->assertEquals(cap.MobileNumberAndEmailId("66564536543", "abcgmail.com"),cap.MobileNumberAndEmailId("66564536543", "abc@gmail.com"))
+				);
+	}
+	
+	@Test
+	void testPassword() {
+		CreateAnAccountPage cap=new CreateAnAccountPage();
+		boolean actual=cap.CheckPassword("Siva1");
+		boolean expected=true;
+		assertEquals(expected, actual);
+	}
+	
+	void testClick() {
+		CreateAnAccountPage cap=new CreateAnAccountPage();
+		boolean actual=cap.clickContinue("", "", "");
+	}
+}

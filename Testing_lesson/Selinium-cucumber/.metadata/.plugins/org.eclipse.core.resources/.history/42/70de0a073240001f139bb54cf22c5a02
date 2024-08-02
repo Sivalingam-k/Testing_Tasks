@@ -1,0 +1,17 @@
+package PageFactory;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class HomePageFactorys {
+	@FindBy(xpath="//div[@class='MuiBox-root css-uxk3ta']//a[1]")
+	WebElement Home;
+	
+	@FindBy(xpath="//div[@class='MuiBox-root css-uxk3ta']//a[1]")
+	WebElement Home;
+	
+	public void Login_button() {
+		Home.click();
+	}
+	
+}

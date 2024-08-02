@@ -1,0 +1,79 @@
+package rentalCar;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.util.Scanner;
+
+import org.junit.jupiter.api.Test;
+
+
+
+class RegistrationPageTest {
+ Scanner sc=new Scanner(System.in);
+	RegistrationPage  rp=new RegistrationPage ();
+	@Test
+	void TestYourName() {
+	
+		System.out.println("Enter Your First Name:");
+		String Firstname=sc.next();
+		char[] ch=Firstname.toCharArray();
+		for(int i=0;i<ch.length;i++) {
+			if((ch[i]>'A')&& (ch[i]<'Z')||(ch[i]>'a')&& (ch[i]<'z')) {
+				assertTrue(true);
+			}
+		}
+		
+		System.out.println("Enter Your Last Name");
+		String Lastname=sc.next();
+		char[] ch1=Lastname.toCharArray();
+		for(int i=0;i<ch1.length;i++) {
+			if((ch1[i]>'A')&& (ch1[i]<'Z')||(ch1[i]>'a')&& (ch1[i]<'z')) {
+				assertTrue(true);
+			}
+		}
+		String Result=Firstname+Lastname;
+		String ActualResult=Firstname+Lastname;
+		System.out.println("Full Name is :"+Result);
+		assertEquals(Result,ActualResult);
+	}
+	
+	//@Test
+	void TestYourName1() {
+		
+	}
+	
+	//@Test
+	void TestEmail() {
+		assertAll(
+				"",
+				//()->assertEquals(rp.Email("Sivagmail.com"),rp.Email("Siva@gmail.com"))
+				()->assertEquals(rp.Email("Siva@gmail.com"),rp.Email("Siva@gmail.com"))
+				//()->assertEquals(rp.Email("Siva@gmailcom"),rp.Email("Siva@gmail.com"))
+				);
+	}
+	
+
+	//@Test
+	void TestPhoneNumber1() {
+		System.out.println("Enter Phone Number:");
+		//long actual=1234682222l;
+		long number=sc.nextLong();
+		if(!(number>'A'&& number<'Z')||!(number>'a'&& number<'z')) {
+			assertTrue(true);
+		}
+	}
+//	@Test
+	void TestUserName() {
+		boolean actual=rp.UserName("Siva123");
+		boolean expected=true;
+		assertEquals(actual,expected);
+	}
+	//@Test
+	void TestUserPassword() {
+		boolean actual=rp.Password("Siva@14");
+		boolean expected=true;
+		assertEquals(actual,expected);
+	}
+	
+	
+}

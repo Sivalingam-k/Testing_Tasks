@@ -1,0 +1,22 @@
+package PageFactory;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class DashboardPageFactory {
+WebDriver driver;
+	
+	@FindBy(xpath="//h1[normalize-space()='Dashboard']")
+	WebElement lbl_cart;
+	public void cartIconIsDisplayed() {
+		lbl_cart.isDisplayed();
+	}
+	
+	public DashboardPageFactory(WebDriver driver) {
+		this.driver=driver;
+		PageFactory.initElements(driver, this);
+	}
+}
+//a[normalize-space()='Oil']

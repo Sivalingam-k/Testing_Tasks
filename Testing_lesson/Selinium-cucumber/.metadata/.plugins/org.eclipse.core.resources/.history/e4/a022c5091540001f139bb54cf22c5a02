@@ -1,0 +1,17 @@
+Feature: Homepage automation of Organic Products application
+
+ 
+  Scenario: Check Homepage is successful with valid credentials
+    Given User is on HomePage
+   
+    And clicks on Home button
+     Then user is navigated to the Home page
+     And clicks on About button
+      Then user is navigated to the About page
+      And clicks on Contact button
+       Then user is navigated to the Contact page
+       And clicks on OurBest button
+        Then user is navigated to the Ourbest page
+    And clicks on login button
+     Then user is navigated to the Login page
+    And Close the browser

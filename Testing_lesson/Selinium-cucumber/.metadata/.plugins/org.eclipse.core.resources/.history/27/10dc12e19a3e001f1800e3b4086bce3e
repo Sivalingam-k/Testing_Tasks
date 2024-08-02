@@ -1,0 +1,17 @@
+package com.testapp;
+
+import com.aventstack.extentreports.ExtentReports;
+
+public class extend_report {
+	public static void main(String[] args) {
+		
+	
+ExtendHtmlReporter htmlReporter=new ExtendHtmlReporter("extent.html");	
+
+ExtentReports extent=new ExtentReports();
+extent.attachReporter(htmlReporter);
+
+ExtentTest test=extent.createTest("Google Search Test1","This is a Test to validate");
+String path=System.getProperty("user.dir")+"\\reports\\index.html";
+	}
+}

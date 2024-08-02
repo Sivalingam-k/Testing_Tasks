@@ -1,0 +1,77 @@
+package stepDefinition;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import PageFactory.DashboardPageFactory;
+import PageFactory.HomePageFactorys;
+import PageFactory.LoginPageFactory;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class HomepageStep {
+
+	static WebDriver driver;
+	LoginPageFactory login;
+	DashboardPageFactory dp;
+	HomePageFactorys hp;
+	
+	@Given("User is on Dashboard page")
+	public void user_is_on_dashboard_page() {
+	    // Write code here that turns the phrase above into concrete actions
+		  driver=new FirefoxDriver();
+		    driver.get("http://172.17.7.111:3000/");
+		    driver.findElement(By.xpath("#")).click();
+	}
+	public void user_enters_valid_and(String username, String password) {
+	    // Write code here that turns the phrase above into concrete actions
+	  login = new LoginPageFactory(driver);
+	  login.enterUsername(username);
+	  login.enterPassword(password);	  		
+	}
+	@When("clicks on login button")
+	public void clicks_on_login_button() {
+
+	    login.clickLoginButton();
+	}
+
+	@Then("user is navigated to the OIl page")
+	public void user_is_navigated_to_the_o_il_page() {
+	   
+	   
+	}
+
+	@Then("user is navigated to the Vegetables page")
+	public void user_is_navigated_to_the_vegetables_page() {
+	    // Write code here that turns the phrase above into concrete actions
+	   
+	}
+
+	@Then("user is navigated to the Pulses page")
+	public void user_is_navigated_to_the_pulses_page() {
+	    // Write code here that turns the phrase above into concrete actions
+	   
+	}
+
+	@Then("user is navigated to the Fruits page")
+	public void user_is_navigated_to_the_fruits_page() {
+	    // Write code here that turns the phrase above into concrete actions
+	    
+	}
+
+	@Then("user is navigated to the Diary  page")
+	public void user_is_navigated_to_the_diary_page() {
+	    // Write code here that turns the phrase above into concrete actions
+	  
+	}
+
+	@Then("Close the browser")
+
+	public void close_the_browser() {
+		driver.close();
+
+	}
+
+}

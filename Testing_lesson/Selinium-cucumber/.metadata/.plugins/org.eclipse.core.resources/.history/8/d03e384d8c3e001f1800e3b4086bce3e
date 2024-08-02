@@ -1,0 +1,50 @@
+package com.testapp;
+
+
+
+
+import org.openqa.selenium.By;
+
+import org.openqa.selenium.WebDriver;
+
+import org.openqa.selenium.firefox.FirefoxDriver;
+public class ReactProject {
+
+public static void main(String[] args) throws InterruptedException {
+
+
+			WebDriver react = new FirefoxDriver();
+
+
+			 react.get("http://localhost:3000");
+Thread.sleep(1000);			
+react.findElement(By.xpath("//button[normalize-space()='Rent a Car']")).click();
+Thread.sleep(1000);		
+
+			 react.findElement(By.xpath("//button[normalize-space()=\"Don't have an account? Sign Up\"]")).click();
+
+			 react.findElement(By.id("firstName")).sendKeys("Arjun");
+
+			 react.findElement(By.id("lastName")).sendKeys("das");
+
+			 react.findElement(By.id("username")).sendKeys("basilahamed007basil");
+
+			 react.findElement(By.id("useremail")).sendKeys("basilahamed007@protonmail.com");
+
+			 react.findElement(By.id("phoneNumber")).sendKeys("7397061751");
+
+			 react.findElement(By.id("address")).sendKeys("USA");
+
+			 react.findElement(By.id("userpassword")).sendKeys("Usa@12345678");
+
+			 react.findElement(By.id("confirmPassword")).sendKeys("Usa@12345678");
+
+			 
+
+			react.findElement(By.xpath("//button[normalize-space()='Sign Up'] = button")).click();	}
+
+	}
+
+
+
+

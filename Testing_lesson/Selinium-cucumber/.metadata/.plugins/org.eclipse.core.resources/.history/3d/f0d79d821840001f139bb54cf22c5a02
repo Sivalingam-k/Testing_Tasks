@@ -1,0 +1,16 @@
+
+Feature: Login page automation of Organic Products application
+
+Scenario: Check Login is successfull with valid credentials
+
+Given user is on login page
+When User enters valid "<userId>" and "<userPass>"
+And clicks on login button
+Then user is navigated to the Dashboard page
+And Close the browser
+
+Examples:
+
+|userId|userPass|
+|manoj@gmail.com|Manoj@123|
+

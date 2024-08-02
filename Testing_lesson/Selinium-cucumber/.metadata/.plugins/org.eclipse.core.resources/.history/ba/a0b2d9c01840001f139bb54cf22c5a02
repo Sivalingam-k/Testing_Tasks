@@ -1,0 +1,42 @@
+package stepDefinition;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import PageFactory.LoginPageFactory;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+
+public class LoginSteps {
+	static WebDriver driver;
+	LoginPageFactory login;
+	
+ 
+	@Given("user is on login page")
+	public void user_is_on_login_page() {
+	    // Write code here that turns the phrase above into concrete actions
+		driver = new FirefoxDriver();
+		driver.get("http://172.17.7.119:3000/Login");
+	}
+
+	@When("User enters valid {string} and {string}")
+	public void user_enters_valid_and(String userId, String userPass) {
+	    // Write code here that turns the phrase above into concrete actions
+		  login=new LoginPageFactory(driver);
+		  login.enterUsername(userId);
+		  login.enterpassword(userPass);
+	}
+	@When("clicks on login button")
+	public void clicks_on_login_button() {
+	    // Write code here that turns the phrase above into concrete actions
+	  login.clickLoginButton();
+	}
+	@Then("user is navigated to the Dashboard page")
+	public void user_is_navigated_to_the_dashboard_page() {
+	   
+	  
+	}
+
+}

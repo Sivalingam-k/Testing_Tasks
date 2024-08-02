@@ -1,0 +1,16 @@
+package rentalCar;
+
+public class RegistrationPage {
+
+	 public String Yourname(String firstname,String LastName) {
+		 return (firstname+LastName);
+	 }
+	 
+	 public String Email(String email) {
+		 return (email);
+	 }
+	 
+	 public String PhoneNumber(String phNumber) {
+		 return phNumber;
+	 }
+}

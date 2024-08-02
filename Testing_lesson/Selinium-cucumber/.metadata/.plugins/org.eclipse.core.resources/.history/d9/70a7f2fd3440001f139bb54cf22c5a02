@@ -1,0 +1,122 @@
+package stepDefinition;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
+
+import PageFactory.DashboardPageFactory;
+import PageFactory.LoginPageFactorys;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class HomepageStep {
+
+	static WebDriver driver;
+	LoginPageFactorys logins;
+	DashboardPageFactory dp;
+	
+	
+	@Given("User is on HomePage")
+	public void user_is_on_home_page() {
+	    // Write code here that turns the phrase above into concrete actions
+		System.out.println("Trying to Visit Organic Products Application!!!");
+		driver = new FirefoxDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(100));
+		driver.get("http://172.17.7.119:3000/");
+	}
+
+	@Then("clicks on Home button")
+	public void clicks_on_home_button() {
+	    // Write code here that turns the phrase above into concrete actions
+	 
+	}
+
+	@Then("user is navigated to the Home page")
+	public void user_is_navigated_to_the_home_page() {
+	    // Write code here that turns the phrase above into concrete actions
+
+	}
+
+	@Then("clicks on About button")
+	public void clicks_on_about_button() {
+	    // Write code here that turns the phrase above into concrete actions
+	  
+	}
+
+	@Then("user is navigated to the About page")
+	public void user_is_navigated_to_the_about_page() {
+	    // Write code here that turns the phrase above into concrete actions
+	   
+	}
+
+	@Then("clicks on Contact button")
+	public void clicks_on_contact_button() {
+	    // Write code here that turns the phrase above into concrete actions
+	
+	}
+
+	@Then("user is navigated to the Contact page")
+	public void user_is_navigated_to_the_contact_page() {
+	    // Write code here that turns the phrase above into concrete actions
+	  
+	}
+
+	@Then("clicks on OurBest button")
+	public void clicks_on_our_best_button() {
+	    // Write code here that turns the phrase above into concrete actions
+
+	}
+
+	@Then("user is navigated to the Ourbest page")
+	public void user_is_navigated_to_the_ourbest_page() {
+	    // Write code here that turns the phrase above into concrete actions
+	 
+	}
+	@Given("clicks on login button")
+	public void clicks_on_login_button() {
+	    // Write code here that turns the phrase above into concrete actions
+		 System.out.println("Given");
+		    driver.findElement(By.xpath("//a[normalize-space()='Login']")).click();
+	}
+
+	@Then("user is navigated to the Login page")
+	public void user_is_navigated_to_the_login_page() {
+	    // Write code here that turns the phrase above into concrete actions
+		System.out.println("Then");
+		Assert.assertTrue(driver.findElements(By.xpath("//a[normalize-space()='Login']")).size()>0,"user is navigated to Login page");
+		
+	}
+	@When("User enters valid {string} and {string}")
+	public void user_enters_valid_and(String userId, String userPass) {
+	    // Write code here that turns the phrase above into concrete actions
+		  logins=new LoginPageFactorys(driver);
+		  logins.enterUsername(userId);
+		  logins.enterpassword(userPass);
+		
+	}
+
+	@When("clicks on Submit button")
+	public void clicks_on_submit_button() {
+	    // Write code here that turns the phrase above into concrete actions
+		logins.Login_button();
+	
+	}
+
+	@Then("navigate to Dashboard")
+	public void navigate_to_dashboard() {
+	    // Write code here that turns the phrase above into concrete actions
+	  dp=new DashboardPageFactory(driver);
+	  dp.cartIconIsDisplayed();
+		//Assert.assertTrue(driver.findElements(By.xpath("//h1[normalize-space()='Dashboard']")).size()>0,"user is navigated to Dashboard page");
+	}
+
+	@Then("Close the browser")
+	public void close_the_browser() {
+	    // Write code here that turns the phrase above into concrete actions
+	 
+	}
+}

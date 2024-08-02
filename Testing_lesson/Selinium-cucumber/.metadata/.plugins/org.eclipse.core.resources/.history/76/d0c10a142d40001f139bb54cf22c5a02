@@ -1,0 +1,39 @@
+package PageFactory;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class LoginPageFactorys {
+	  WebDriver driver;
+		
+		@FindBy(id="email")
+		WebElement txt_email;
+		
+		@FindBy(id="password")
+		WebElement txt_password;
+		
+		By btn_login = By.xpath("//button[normalize-space()='Sign In']");
+		
+		
+		public void enterUsername(String email) {
+			txt_email.sendKeys(email);
+		}
+		
+		public void enterpassword(String password) {
+			txt_password.sendKeys(password);
+		}
+		
+		public void hitLoginButton() {
+
+			react.findElement(btn_login).click();
+
+			}
+		
+		public LoginPageFactorys(WebDriver driver) {
+			this.driver=driver;
+			PageFactory.initElements(driver, this);
+		}	
+}

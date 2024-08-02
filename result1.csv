@@ -1,0 +1,29 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1719921102425,1646,Homepage,200,OK,Airtel_User 1-1,text,true,,93856,290,1,1,https://www.lkouniv.ac.in/en/page/university-history,175,0,78
+1719921102425,185,Homepage-0,301,Moved Permanently,Airtel_User 1-1,text,true,,665,145,1,1,http://www.lkouniv.ac.in/en/page/university-history,175,0,78
+1719921102614,1457,Homepage-1,200,OK,Airtel_User 1-1,text,true,,93191,145,1,1,https://www.lkouniv.ac.in/en/page/university-history,1400,0,686
+1719921104074,1194,ContactPage,200,OK,Airtel_User 1-1,text,true,,125611,282,1,1,https://www.lkouniv.ac.in/article/en/contact-dir,72,0,0
+1719921104074,72,ContactPage-0,301,Moved Permanently,Airtel_User 1-1,text,true,,657,141,1,1,http://www.lkouniv.ac.in/article/en/contact-dir,72,0,0
+1719921104146,1122,ContactPage-1,200,OK,Airtel_User 1-1,text,true,,124954,141,1,1,https://www.lkouniv.ac.in/article/en/contact-dir,1088,0,0
+1719921105269,601,Acadamicpage,200,OK,Airtel_User 1-1,text,true,,90176,298,1,1,https://www.lkouniv.ac.in/en/page/university-at-a-glance,53,0,0
+1719921105269,53,Acadamicpage-0,301,Moved Permanently,Airtel_User 1-1,text,true,,673,149,1,1,http://www.lkouniv.ac.in/en/page/university-at-a-glance,53,0,0
+1719921105322,548,Acadamicpage-1,200,OK,Airtel_User 1-1,text,true,,89503,149,1,1,https://www.lkouniv.ac.in/en/page/university-at-a-glance,543,0,0
+1719921105872,658,VisionAndMission,200,OK,Airtel_User 1-1,text,true,,93586,282,1,1,https://www.lkouniv.ac.in/en/page/vision-mission,54,0,0
+1719921105872,54,VisionAndMission-0,301,Moved Permanently,Airtel_User 1-1,text,true,,657,141,1,1,http://www.lkouniv.ac.in/en/page/vision-mission,54,0,0
+1719921105926,604,VisionAndMission-1,200,OK,Airtel_User 1-1,text,true,,92929,141,1,1,https://www.lkouniv.ac.in/en/page/vision-mission,599,0,0
+1719921106534,87,RegistrationForExam,404,Not Found,Airtel_User 1-1,text,false,,492,149,1,1,http://exam.lkouniv.ac.in/apps/public/PracticalExaminer,86,0,37
+1719921106622,636,Library,200,OK,Airtel_User 1-1,text,true,,89357,274,1,1,https://www.lkouniv.ac.in/en/page/committee2,55,0,0
+1719921106622,55,Library-0,301,Moved Permanently,Airtel_User 1-1,text,true,,649,137,1,1,http://www.lkouniv.ac.in/en/page/committee2,55,0,0
+1719921106677,581,Library-1,200,OK,Airtel_User 1-1,text,true,,88708,137,1,1,https://www.lkouniv.ac.in/en/page/committee2,574,0,0
+1719921107260,924,Gallery,200,OK,Airtel_User 1-1,text,true,,113717,282,1,1,https://www.lkouniv.ac.in/en/page/photo-gallery1,55,0,0
+1719921107260,55,Gallery-0,301,Moved Permanently,Airtel_User 1-1,text,true,,657,141,1,1,http://www.lkouniv.ac.in/en/page/photo-gallery1,55,0,0
+1719921107315,869,Gallery-1,200,OK,Airtel_User 1-1,text,true,,113060,141,1,1,https://www.lkouniv.ac.in/en/page/photo-gallery1,861,0,0
+1719921108185,2616,Openings,200,OK,Airtel_User 1-1,text,true,,206225,286,1,1,https://www.lkouniv.ac.in/en/page/current-openings,55,0,0
+1719921108185,55,Openings-0,301,Moved Permanently,Airtel_User 1-1,text,true,,661,143,1,1,http://www.lkouniv.ac.in/en/page/current-openings,55,0,0
+1719921108241,2560,Openings-1,200,OK,Airtel_User 1-1,text,true,,205564,143,1,1,https://www.lkouniv.ac.in/en/page/current-openings,2030,0,0
+1719921110802,688,Facilities,200,OK,Airtel_User 1-1,text,true,,92201,306,1,1,https://www.lkouniv.ac.in/en/page/outdoor-reports-facilities,56,0,0
+1719921110802,56,Facilities-0,301,Moved Permanently,Airtel_User 1-1,text,true,,681,153,1,1,http://www.lkouniv.ac.in/en/page/outdoor-reports-facilities,56,0,0
+1719921110859,631,Facilities-1,200,OK,Airtel_User 1-1,text,true,,91520,153,1,1,https://www.lkouniv.ac.in/en/page/outdoor-reports-facilities,595,0,0
+1719921111491,1113,Awards,200,OK,Airtel_User 1-1,text,true,,137086,272,1,1,https://www.lkouniv.ac.in/article/en/awards,56,0,0
+1719921111491,56,Awards-0,301,Moved Permanently,Airtel_User 1-1,text,true,,647,136,1,1,http://www.lkouniv.ac.in/article/en/awards,56,0,0
+1719921111548,1056,Awards-1,200,OK,Airtel_User 1-1,text,true,,136439,136,1,1,https://www.lkouniv.ac.in/article/en/awards,988,0,0

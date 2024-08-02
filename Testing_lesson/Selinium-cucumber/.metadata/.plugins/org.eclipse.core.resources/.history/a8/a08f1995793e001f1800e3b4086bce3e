@@ -1,0 +1,11 @@
+package com.testapp;
+
+public class LaunchBrowser {
+
+	public static void main(String[] args) {
+		
+
+		WebDriver wd=new ChromeDriver();
+	}
+
+}

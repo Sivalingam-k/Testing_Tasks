@@ -1,0 +1,242 @@
+{
+	"id": "871dac74-f12c-4867-84c9-fff22dd82587",
+	"name": "Collection1",
+	"timestamp": "2024-07-04T06:04:58.039Z",
+	"collection_id": "36734993-ef423bed-c3ad-4acb-9984-184b3a7cae73",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 0,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-07-04T06:04:53.850Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "0d9c52e3-be97-489b-9ed2-44b0df93da3e",
+			"name": "SERVICES",
+			"url": "https://www.changepond.com/services/digital-customer-experience/",
+			"time": 1032,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				1032
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "d19c3753-eb3d-418f-b0bb-8684bf58c647",
+			"name": "CUSTOMER_SERVICES",
+			"url": "https://www.changepond.com/services/digital-customer-experience/",
+			"time": 207,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				207
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "20f22f76-5fcd-4aff-b5ef-b85353df2364",
+			"name": "WEBINAR_AND_EVENTS",
+			"url": "https://www.changepond.com/resources/webinar/",
+			"time": 205,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				205
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "85cf7b4c-0540-4d97-b632-41da91d9acf8",
+			"name": "PRODUCT_DESIGN",
+			"url": "https://www.changepond.com/resources/webinar/",
+			"time": 206,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				206
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "83a9ad92-7a4a-4c39-9171-8454acc36829",
+			"name": "ABOUTUS",
+			"url": "https://www.changepond.com/about",
+			"time": 182,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				182
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "fca06076-6e39-4ae8-9082-ec202402846e",
+			"name": "CONTACT_US",
+			"url": "https://www.changepond.com/contact",
+			"time": 195,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				195
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "b1f9cab3-3877-4ce5-936f-16140b4a92a9",
+			"name": "LOCATION",
+			"url": "https://www.changepond.com/locations",
+			"time": 197,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				197
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "036a0f43-df91-4fcf-a243-4fad0885fcbe",
+			"name": "PARTNERS",
+			"url": "https://www.changepond.com/partners",
+			"time": 197,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				197
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "31634253-6db7-4ef4-a259-4ec09c51c29d",
+			"name": "CAREERS",
+			"url": "https://www.changepond.com/careers/",
+			"time": 218,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				218
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "1f726005-e20f-475c-8358-862471572552",
+			"name": "INTELLIGENCE_AUTOMATION",
+			"url": "https://www.changepond.com/services/intelligent-automation/",
+			"time": 205,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				205
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 2844,
+	"collection": {
+		"requests": [
+			{
+				"id": "0d9c52e3-be97-489b-9ed2-44b0df93da3e",
+				"method": "GET"
+			},
+			{
+				"id": "d19c3753-eb3d-418f-b0bb-8684bf58c647",
+				"method": "GET"
+			},
+			{
+				"id": "20f22f76-5fcd-4aff-b5ef-b85353df2364",
+				"method": "GET"
+			},
+			{
+				"id": "85cf7b4c-0540-4d97-b632-41da91d9acf8",
+				"method": "GET"
+			},
+			{
+				"id": "83a9ad92-7a4a-4c39-9171-8454acc36829",
+				"method": "GET"
+			},
+			{
+				"id": "fca06076-6e39-4ae8-9082-ec202402846e",
+				"method": "GET"
+			},
+			{
+				"id": "b1f9cab3-3877-4ce5-936f-16140b4a92a9",
+				"method": "GET"
+			},
+			{
+				"id": "036a0f43-df91-4fcf-a243-4fad0885fcbe",
+				"method": "GET"
+			},
+			{
+				"id": "31634253-6db7-4ef4-a259-4ec09c51c29d",
+				"method": "GET"
+			},
+			{
+				"id": "1f726005-e20f-475c-8358-862471572552",
+				"method": "GET"
+			}
+		]
+	}
+}

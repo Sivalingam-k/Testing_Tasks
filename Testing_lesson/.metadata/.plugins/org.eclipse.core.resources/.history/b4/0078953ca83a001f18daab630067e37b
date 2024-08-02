@@ -1,0 +1,16 @@
+package com.APITesting;
+
+import static io.restassured.RestAssured.baseURI;
+import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.equalTo;
+
+public class TestGETandPOSTRequest {
+
+	
+	public void testGet1() {
+		baseURI="http://localhost:8888";
+		given().get("/users").then().statusCode(200).body("[1].id",equalTo("3") ).log().all();
+		baseURI="http://localhost:8888";
+		given().get("/users").then().statusCode(200).body("[1].username",equalTo("siva") ).log().all();
+	}
+}

@@ -1,0 +1,43 @@
+package io.cal;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+class LifeCycleAnnotationTest {
+
+	
+	LifeCycleAnnotation m;
+	
+	@BeforeAll
+	void beforeAll() {
+		System.out.println("This will run before all the methods");
+	}
+	@AfterAll
+void afterAll() {
+		System.out.println("This will run at Last");
+	}
+	
+	@BeforeEach
+void init() {
+		m=new LifeCycleAnnotation();
+}
+	@AfterEach
+void cleanUp() {
+	System.out.println("Clean Up Now!");
+}
+	@Test
+void testSquare() {
+	
+}
+	@Test
+void testCube() {
+	
+}
+	
+
+}

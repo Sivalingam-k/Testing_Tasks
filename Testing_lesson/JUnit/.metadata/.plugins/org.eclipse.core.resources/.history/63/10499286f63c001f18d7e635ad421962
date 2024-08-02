@@ -1,0 +1,36 @@
+package io.cal;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class LifeCycleAnnotationTest {
+
+	
+	LifeCycleAnnotation m;
+	
+	
+	void beforeAll() {
+		
+	}
+void afterAll() {
+		
+	}
+void init() {
+	
+}
+void cleanUp() {
+	
+}
+void testSquare() {
+	
+}
+void testCube() {
+	
+}
+	@Test
+	void test() {
+		fail("Not yet implemented");
+	}
+
+}
